@@ -151,4 +151,3 @@ $(document).ready(function () {
     document.getElementById("nuevoResultado").innerHTML = resultado;
   }
   
-  
