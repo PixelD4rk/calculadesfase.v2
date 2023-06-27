@@ -1,0 +1,166 @@
+/* Estilos generales */
+
+body {
+    background-image: url(img/carab.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    color: #ddd;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+  }
+  
+  .container {
+    flex: 1;
+    margin-top: 50px; /* Ajustar el margen superior según sea necesario */
+  }
+  
+  .footer {
+    background: linear-gradient(to bottom, #333, #000);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #171616;
+    color: #fff;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer:hover .footer-text {
+    transform: translateX(250%);
+    transition: transform 0.3s ease-in-out;
+    -webkit-transform: translateX(250%);
+    -moz-transform: translateX(250%);
+    -ms-transform: translateX(250%);
+    -o-transform: translateX(250%);
+  }
+  
+  .footer-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    background-image: url(img/SIAE.png);
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .footer-text {
+    margin: 0;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .result p {
+    margin-bottom: 10px;
+  }
+  
+  .difference {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #dac527;
+    background-color: #6e6f69a4;
+  }
+  
+  .result .difference {
+    color: #dac527;
+    background-color: #6e6f69a4;
+  }
+  
+  .result .mensaje {
+    color: #542828;
+  }
+  
+  .result .adelanto {
+    color: #19d335;
+  }
+  
+  .result .retraso {
+    color: #ef1212;
+  }
+  
+  /* Estilos personalizados para el calendario */
+  .ui-datepicker {
+    font-size: 14px;
+    width: 290px; /* Ajustar el ancho del calendario según tus necesidades */
+  }
+  
+  .ui-datepicker-header {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .ui-datepicker-calendar {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .ui-datepicker-calendar th {
+    background-color: #f0f0f0;
+    border: none;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .ui-datepicker-calendar td {
+    border: none;
+    text-align: center;
+    padding: 5px;
+  }
+  
+  .ui-datepicker-calendar .ui-state-default {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .ui-datepicker-calendar .ui-state-default:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .ui-datepicker-calendar .ui-state-active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .ui-datepicker-calendar .ui-state-active:hover {
+    background-color: #0069d9;
+  }
+  
+  #ingresoHoraOficial {
+    margin-top: 100px; /* Aumenta el margen superior para mayor separación */
+  }
+  
+  #nuevoResultado {
+    margin-top: 10px; /* Añade un margen superior para separar el botón */
+  }
+  
+  /* Estilos personalizados para el logo en la página de inicio de sesión */
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .logo {
+    width: 200px;
+  }
+  
