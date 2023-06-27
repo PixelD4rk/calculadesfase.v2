@@ -1,5 +1,3 @@
-/* Estilos generales */
-
 body {
     background-image: url(img/carab.jpg);
     background-repeat: no-repeat;
@@ -12,14 +10,14 @@ body {
     flex-direction: column;
     color: #ddd;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
-  }
-  
-  .container {
+}
+
+.container {
     flex: 1;
     margin-top: 50px; /* Ajustar el margen superior según sea necesario */
-  }
-  
-  .footer {
+}
+
+.footer {
     background: linear-gradient(to bottom, #333, #000);
     position: fixed;
     bottom: 0;
@@ -31,136 +29,120 @@ body {
     text-align: center;
     display: flex;
     align-items: center;
-  }
-  
-  .footer:hover .footer-text {
+}
+
+.footer:hover .footer-text {
     transform: translateX(250%);
     transition: transform 0.3s ease-in-out;
     -webkit-transform: translateX(250%);
     -moz-transform: translateX(250%);
     -ms-transform: translateX(250%);
     -o-transform: translateX(250%);
-  }
-  
-  .footer-logo {
-    width: 100px;
-    height: 100px;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 80px;
     margin-right: 10px;
     background-image: url(img/SIAE.png);
     background-size: cover;
     background-position: center center;
-  }
-  
-  .footer-text {
+}
+
+.footer-text {
     margin: 0;
     transition: transform 0.3s ease-in-out;
-  }
-  
-  .form-group {
+}
+
+.form-group {
     margin-bottom: 20px;
-  }
-  
-  .result {
+}
+
+.result {
     margin-top: 20px;
     font-weight: bold;
-  }
-  
-  .result p {
+}
+
+.result p {
     margin-bottom: 10px;
-  }
-  
-  .difference {
+}
+
+.difference {
     margin-top: 20px;
     font-weight: bold;
     color: #dac527;
     background-color: #6e6f69a4;
-  }
-  
-  .result .difference {
+}
+
+.result .difference {
     color: #dac527;
     background-color: #6e6f69a4;
-  }
-  
-  .result .mensaje {
+}
+
+.result .mensaje {
     color: #542828;
-  }
-  
-  .result .adelanto {
+}
+
+.result .adelanto {
     color: #19d335;
-  }
-  
-  .result .retraso {
+}
+
+.result .retraso {
     color: #ef1212;
-  }
-  
-  /* Estilos personalizados para el calendario */
-  .ui-datepicker {
+}
+
+/* Estilos personalizados para el calendario */
+.ui-datepicker {
     font-size: 14px;
     width: 290px; /* Ajustar el ancho del calendario según tus necesidades */
-  }
-  
-  .ui-datepicker-header {
+}
+
+.ui-datepicker-header {
     background-color: #f0f0f0;
     border: none;
     padding: 10px;
     text-align: center;
     font-weight: bold;
-  }
-  
-  .ui-datepicker-calendar {
+}
+
+.ui-datepicker-calendar {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  .ui-datepicker-calendar th {
+}
+
+.ui-datepicker-calendar th {
     background-color: #f0f0f0;
     border: none;
     text-align: center;
     padding: 5px;
-  }
-  
-  .ui-datepicker-calendar td {
+}
+
+.ui-datepicker-calendar td {
     border: none;
     text-align: center;
     padding: 5px;
-  }
-  
-  .ui-datepicker-calendar .ui-state-default {
+}
+
+.ui-datepicker-calendar .ui-state-default {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 5px;
     cursor: pointer;
-  }
-  
-  .ui-datepicker-calendar .ui-state-default:hover {
+}
+
+.ui-datepicker-calendar .ui-state-default:hover {
     background-color: #f0f0f0;
-  }
-  
-  .ui-datepicker-calendar .ui-state-active {
+}
+
+.ui-datepicker-calendar .ui-state-active {
     background-color: #007bff;
     color: #fff;
-  }
-  
-  .ui-datepicker-calendar .ui-state-active:hover {
+}
+
+.ui-datepicker-calendar .ui-state-active:hover {
     background-color: #0069d9;
-  }
-  
-  #ingresoHoraOficial {
+}
+
+#ingresoHoraOficial {
     margin-top: 100px; /* Aumenta el margen superior para mayor separación */
-  }
-  
-  #nuevoResultado {
-    margin-top: 10px; /* Añade un margen superior para separar el botón */
-  }
-  
-  /* Estilos personalizados para el logo en la página de inicio de sesión */
-  .logo-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-  }
-  
-  .logo {
-    width: 200px;
-  }
-  
+}
