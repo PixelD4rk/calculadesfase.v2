@@ -10,6 +10,27 @@
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-timepicker/0.5.2/css/bootstrap-timepicker.min.css">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        .message-container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(154, 33, 33, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 9999;
+        }
+
+        .message-container p {
+            margin: 0;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -23,28 +44,75 @@
                 <button class="btn btn-primary" type="submit">Ingresar</button>
             </div>
         </form>
-        
+    </div>
+
+    <div class="message-container" id="messageContainer" style="display: none;">
+        <p id="messageText"></p>
     </div>
 
     <footer class="footer">
         <div class="footer-logo"></div>
-        <p class="footer-text">Designed by "Raven"</p>
+        <p class="footer-text">© Designed by Ismael Flores</p>
     </footer>
 
- <script src="script.js"></script>
+    <script src="script.js"></script>
 
     <script>
+        // Lista de claves de funcionarios autorizados
+        var funcionariosAutorizados = ["000595X",
+            "000727A",
+            "002639G",
+            "005211W",
+            "016793Q",
+            "942735S",
+            "967371E",
+            "968383C",
+            "968444H",
+            "968633E",
+            "968734B",
+            "973170F",
+            "973433K",
+            "974986P",
+            "977058A",
+            "977512N",
+            "978939B",
+            "979854F",
+            "980394Y",
+            "981978W",
+            "982386N",
+            "982499Q",
+            "988619D",
+            "989579E",
+            "997087D",
+            "998237Y"
+        ];
+
+        // Función para validar la clave de ingreso
         function validarClave(event) {
-            event.preventDefault(); // Evita que el formulario se envíe automáticamente
+            event.preventDefault(); // Evita el envío del formulario
 
-            var clave = document.getElementById("clave").value;
+            var claveIngresada = document.getElementById("clave").value;
 
-            // Verifica la clave ingresada
-            if (clave === "Siaeos9") {
-                window.location.href = "app.html"; // Redirige a la página de la aplicación
+            if (funcionariosAutorizados.includes(claveIngresada)) {
+                // La clave es válida, mostrar mensaje de bienvenida
+                mostrarMensaje("Acceso concedido. Redireccionando...");
+                // Redirigir a la próxima página después de 2 segundos
+                setTimeout(function () {
+                    window.location.href = "app.html";
+                }, 2000);
             } else {
-                alert("Clave incorrecta. Por favor, intente nuevamente.");
+                // La clave no es válida, mostrar mensaje de error
+                mostrarMensaje("Clave de acceso incorrecta. Por favor, inténtalo nuevamente.");
             }
+        }
+
+        // Función para mostrar un mensaje en pantalla
+        function mostrarMensaje(mensaje) {
+            var messageContainer = document.getElementById("messageContainer");
+            var messageText = document.getElementById("messageText");
+
+            messageText.innerHTML = mensaje;
+            messageContainer.style.display = "block";
         }
     </script>
 </body>
