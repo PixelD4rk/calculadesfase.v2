@@ -48,6 +48,12 @@
         <button class="btn btn-primary" onclick="mostrarIngresoHoraOficial()">Hora Oficial</button>
 
         <div id="ingresoHoraOficial" style="display: none;">
+
+            <div class="form-group">
+                <label for="nuevaFecha">Seleccione fecha del evento:</label>
+                <input type="text" id="nuevaFecha" class="form-control" placeholder="dd/mm/yyyy">
+              </div>
+
             <div class="form-group">
                 <label for="nuevaHoraOficial">Ingrese hora oficial</label>
                 <input type="text" id="nuevaHoraOficial" name="Nueva Hora oficial" class="form-control timepicker"
@@ -62,11 +68,11 @@
             <button class="btn btn-danger" onclick="cerrarSesion()">Cerrar sesión</button>
         </div>
     </div>
-    <!--
-    <footer class="footer">
+
+    <!--<footer class="footer">
         <div class="footer-logo"></div>
         <p class="footer-text">Designed by "Raven"</p>
-    </footer> -->
+    </footer>-->
 
     <!-- Biblioteca jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
