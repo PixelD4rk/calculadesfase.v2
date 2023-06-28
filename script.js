@@ -138,9 +138,9 @@ $(document).ready(function () {
   
     var nuevaFechaHoraDvr;
     if (diferenciaTotal.asSeconds() < 0) {
-      nuevaFechaHoraDvr = nuevaFechaHoraOficial.clone().add(diferenciaTotalSegundos, 'seconds');
-    } else {
       nuevaFechaHoraDvr = nuevaFechaHoraOficial.clone().subtract(diferenciaTotalSegundos, 'seconds');
+    } else {
+      nuevaFechaHoraDvr = nuevaFechaHoraOficial.clone().add(diferenciaTotalSegundos, 'seconds');
     }
   
     var resultado =
