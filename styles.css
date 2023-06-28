@@ -1,5 +1,5 @@
 body {
-    background-image: url(img/tec.jpg);
+    background-image: url('img/tec.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -44,7 +44,7 @@ body {
     width: 80px;
     height: 80px;
     margin-right: 10px;
-    background-image: url(img/SIAE.png);
+    background-image: url('img/SIAE.png');
     background-size: cover;
     background-position: center center;
 }
